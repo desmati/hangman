@@ -1,0 +1,32 @@
+#dialog {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 10;
+  padding: 2rem;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  box-shadow: 0 0 20px var(--shadow-black);
+}
+
+#dialog__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+}
+
+#dialog__backdrop{
+  display: none;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--background-color-glass);
+}

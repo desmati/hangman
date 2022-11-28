@@ -1,4 +1,4 @@
-[
+export const WORDS = [
     "abruptly",
     "absurd",
     "abyss",
@@ -212,4 +212,4 @@
     "zipper",
     "zodiac",
     "zombie"
-]
+];

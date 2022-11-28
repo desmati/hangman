@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/dialog.css">
     <link rel="stylesheet" href="./assets/css/keyboard.css">
 </head>
 
 <body>
     <main>
-        <h1>Simple JavaScript Hangman Game</h1>
+        <h1>Hangman</h1>
 
         <div id="hangman__drawing">
             <svg version="1.1" id="hangman__drawing--svg" xmlns="http://www.w3.org/2000/svg"
@@ -62,13 +63,15 @@
         </div>
     </main>
 
-    <script src="./assets/js/words.js"></script>
-    <script src="./assets/js/word-provider.js"></script>
-    <script src="./assets/js/hangman.js"></script>
-    <script src="./assets/js/hangman-ui.js"></script>
-    <script src="./assets/js/keyboard.js"></script>
-    <script src="./assets/js/keyboard-ui.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <aside>
+        <div id="dialog">
+            <div id="dialog__content"></div>
+        </div>
+        <div id="dialog__backdrop"></div>
+
+    </aside>
+
+    <script src="./src/index.js" type="module"></script>
 </body>
 
 </html>

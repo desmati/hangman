@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap');
 
+:root {
+    --background-color: #fff;
+    --background-color-glass: rgba(0, 0, 0, 0.7);
+    --btn-active-background-color: #062;
+    --btn-background-color: #eee;
+    --btn-background: #eee;
+    --btn-color: #fff;
+    --btn-border-color: #d9d9d9;
+    --text-color: #888;
+    --disabled-color: #ddd;
+    --hover-color: #ccc;
+    --border-radius: 5px;
+    --shadow-black: rgb(0, 0, 0, 0.5);
+    --shadow-white: rgb(255, 255, 255, 0.5);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -35,7 +51,7 @@ body {
     font-family: 'Titillium Web', sans-serif;
     font-size: 1rem;
     line-height: 1.4rem;
-    background-color: #fff;
+    background-color: var(--background-color);
 }
 
 h1,
@@ -47,31 +63,4 @@ h6,
 p,
 a {
     font-family: 'Titillium Web', sans-serif;
-}
-
-figure {
-    position: relative;
-}
-
-figure>img,
-figure video {
-    width: 100%;
-    height: auto;
-}
-
-figure>img {
-    cursor: pointer;
-}
-
-figcaption {
-    width: 90%;
-    z-index: 1;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.7);
-    margin: 0;
-    padding: .2rem;
-    position: absolute;
-    top: calc(100% - 1rem);
-    transform: translateY(-100%);
-    box-shadow: 2px 2px 0 #fff;
 }

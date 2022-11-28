@@ -3,36 +3,36 @@
 }
 
 #keyboard .key {
-    background: #eee;
+    background: var(--btn-background);
     display: inline-block;
     vertical-align: top;
     margin: 0.3rem;
     padding: 0.5rem;
-    border: 1px solid #888;
+    border: 1px solid var(--text-color);
     cursor: pointer;
     min-width: 2rem;
     text-align: center;
-    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    box-shadow: 1px 1px 2px var(--shadow-black);
 }
 
 #keyboard .key:hover {
-    background: #ddd;
+    background: var(--hover-color);
 }
 
 #keyboard .key:active {
-    background: #ccc;
+    background: var(--hover-color);
 }
 
 #keyboard .key-clicked,
 #keyboard .key.key-clicked:hover {
-    background: #062;
-    color: #fff;
+    background: var(--btn-active-background-color);
+    color: var(--btn-color);
 }
 
 #keyboard .key-wrong,
 #keyboard .key.key-wrong:hover {
-    background: #fff;
+    background: var(--background-color);
     box-shadow: none;
-    color: #ddd;
-    border: 1px solid #ddd;
+    color: var(--disabled-color);
+    border: 1px solid var(--disabled-color);
 }

@@ -1,0 +1,1 @@
+export const DEFINITION_API = `https://api.dictionaryapi.dev/api/v2/entries/en/{0}`;
